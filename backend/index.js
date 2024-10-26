@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const multer = require("multer");
 const cors = require("cors");
 const { Form } = require("./models/formSchema");
-const PORT = 3001;
+const PORT = process.env.PORT || 8000;
 const app = express();
 
 app.use(express.json());
