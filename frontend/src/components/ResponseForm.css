@@ -1,0 +1,150 @@
+/* ResponseForm Component Styles */
+
+.response-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  min-height: 100vh;
+  min-width: 80vw;
+}
+
+.response-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 2em;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.response-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+.response-form p {
+  color: #666;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.section-container {
+  margin-bottom: 1.5em;
+}
+
+.section-title {
+  font-size: 1.25em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+.section-description {
+  color: #777;
+  margin-bottom: 1em;
+}
+
+.field-container {
+  margin-bottom: 1.25em;
+}
+
+.field-label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.25em;
+}
+
+.field-input {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  color: #333;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.field-input:focus {
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75em;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1em;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #d9534f;
+  text-align: center;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+@media (max-width: 575.98px) {
+  .response-form {
+    padding: 1em;
+  }
+
+  .section-title {
+    font-size: 17px;
+  }
+
+  .field-input,
+  .submit-button {
+    font-size: 14px;
+    padding: 0.6em;
+  }
+
+  .submit-button {
+    padding: 0.6em;
+  }
+}
+
+/* Medium devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .response-form {
+    padding: 1.5em;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .field-input,
+  .submit-button {
+    font-size: 15px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .response-form-container {
+    min-width: 70vw;
+  }
+
+  .response-form {
+    padding: 2.5em;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,190 @@
+/* Global and body styling */
+.body-wrapper {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 80vw;
+}
+
+/* Main header styling */
+.main-heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+/* Form container styling */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Section and field styling */
+.section {
+  margin-bottom: 1.5em;
+}
+
+.field-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #555;
+}
+
+.text-input,
+.textarea-input,
+.select-input {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.text-input:focus,
+.textarea-input:focus,
+.select-input:focus {
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+.checkbox-input {
+  margin-left: 0.5em;
+}
+
+/* Button styling */
+.button-submit,
+.button-secondary {
+  display: block;
+  width: 100%;
+  padding: 0.75em;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.button-submit {
+  background-color: #007bff;
+}
+
+.button-submit:hover {
+  background-color: #0056b3;
+}
+
+.button-secondary {
+  width: auto;
+  margin-top: 0.5em;
+  background-color: #28a745;
+}
+
+.button-secondary:hover {
+  background-color: #218838;
+}
+
+/* Subheadings styling */
+.section-heading {
+  margin-top: 1.5em;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.field-heading {
+  margin: 1em 0 0.5em;
+  font-size: 17px;
+  color: #555;
+}
+
+/* Small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .main-heading {
+    font-size: 20px;
+  }
+
+  .form-container {
+    padding: 1.5em;
+  }
+
+  .section-heading {
+    font-size: 16px;
+  }
+
+  .field-heading {
+    font-size: 15px;
+  }
+
+  .text-input,
+  .textarea-input,
+  .select-input,
+  .button-submit,
+  .button-secondary {
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .main-heading {
+    font-size: 24px;
+  }
+
+  .form-container {
+    padding: 1.75em;
+  }
+
+  .section-heading {
+    font-size: 18px;
+  }
+
+  .field-heading {
+    font-size: 16px;
+  }
+
+  .text-input,
+  .textarea-input,
+  .select-input,
+  .button-submit,
+  .button-secondary {
+    font-size: 15px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .main-heading {
+    font-size: 26px;
+  }
+
+  .form-container {
+    padding: 2.5em;
+  }
+
+  .section-heading {
+    font-size: 20px;
+  }
+
+  .field-heading {
+    font-size: 18px;
+  }
+
+  .text-input,
+  .textarea-input,
+  .select-input,
+  .button-submit,
+  .button-secondary {
+    font-size: 16px;
+  }
+}
