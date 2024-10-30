@@ -12,8 +12,8 @@ const PORT = process.env.Port;
 const app = express();
 
 app.use(express.json());
-const allowedOrigins = ["http://localhost:5173", "http://127.0.0.1:5173"];
-
+// const allowedOrigins = ["http://localhost:5173", "http://127.0.0.1:5173"];
+const allowedOrigins = "https://googleform-frontend.onrender.com";
 app.use(
   cors({
     origin: (origin, callback) => {
