@@ -2,8 +2,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 const multer = require("multer");
 const cors = require("cors");
+const dotenv = require("dotenv");
+dotenv.config({
+  path: "./config.env",
+});
 const { Form } = require("./models/formSchema");
-const PORT = process.env.PORT || 8000;
+
+const PORT = process.env.Port;
 const app = express();
 
 app.use(express.json());
@@ -129,11 +134,8 @@ app.get("/forms/:id", async (req, res) => {
   res.json(form);
 });
 
-// Connect to MongoDB and start server
 mongoose
-  .connect(
-    "mongodb+srv://shaistha:test123@cluster0.9e03u.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-  )
+  .connect(process.env.DATABASE)
   .then(() =>
     app.listen(PORT, () =>
       console.log(`Server running on ${PORT} and database connected`)
