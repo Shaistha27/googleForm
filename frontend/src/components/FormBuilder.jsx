@@ -185,7 +185,8 @@ const FormBuilder = () => {
     const formData = { title, description, sections };
     console.log(formData);
     try {
-      const response = await axios.post('http://localhost:3001/forms', formData);
+      // const response = await axios.post('http://localhost:3001/forms', formData);
+      const response = await axios.post('https://googleform-backend3.onrender.com/forms', formData);
       console.log("Form data:", formData);
       alert(response.data.message);
       navigate(`/form/${response.data.form._id}`);
