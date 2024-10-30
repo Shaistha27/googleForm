@@ -13,7 +13,8 @@ const ResponseForm = () => {
   useEffect(() => {
     const fetchForm = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/forms/${id}`);
+        // const response = await axios.get(`http://localhost:3001/forms/${id}`);
+        const response = await axios.get(`https://googleform-backend3.onrender.com/forms/${id}`);
         setForm(response.data);
         console.log("Fetched form data:", response.data);
       } catch (error) {
@@ -36,7 +37,8 @@ const ResponseForm = () => {
     e.preventDefault();
     console.log("Submitting answers:", JSON.stringify(answers, null, 2));
     try {
-      await axios.post(`http://localhost:3001/forms/${id}/responses`, { answers });
+      // await axios.post(`http://localhost:3001/forms/${id}/responses`, { answers });
+      await axios.post(`https://googleform-backend3.onrender.com/forms/${id}/responses`, { answers });
       alert('Response submitted successfully');
       navigate('/success');
     } catch (error) {
